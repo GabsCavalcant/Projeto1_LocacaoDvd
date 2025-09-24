@@ -15,20 +15,18 @@ import locacaodvds.entidades.Dvd;
  * @author gabri
  */
 public class DvdServices {
-    
-    public List<Dvd> getTodos(){
-        
+
+    public List<Dvd> getTodos() {
+
         List<Dvd> lista = new ArrayList<>();
-        
-        try(DvdDAO dao = new DvdDAO()){
+
+        try (DvdDAO dao = new DvdDAO()) {
             lista = dao.listarTodos();
-            
-            
-        
-    }catch(SQLException e){
-        e.printStackTrace();
-    }
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
         return lista;
-    
-}
+
+    }
 }
