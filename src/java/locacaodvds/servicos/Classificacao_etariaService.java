@@ -13,7 +13,7 @@ import java.util.List;
  *
  * @author gabri
  */
-public class Classificacao_eteariaService {
+public class Classificacao_etariaService {
     
     public List<Classificacao_etaria> getTodos(){
         

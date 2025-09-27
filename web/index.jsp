@@ -22,7 +22,7 @@
             </li>
             <li>
                 <%-- Este link será implementado nos próximos passos --%>
-                <a href="#">Cadastro de Classificações Etárias</a>
+                <a href="${pageContext.request.contextPath}/formulario/classificacao-etaria/listagem.jsp">Cadastro de Classificações Etárias</a>
             </li>
             <li>
                 <%-- Este link será implementado nos próximos passos --%>

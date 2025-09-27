@@ -10,7 +10,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 import locacaodvds.entidades.Classificacao_etaria;
-import static locacaodvds.jdbc.ConnectionFactory.getConnection;
+import locacaodvds.jdbc.ConnectionFactory;
 
 /**
  *
