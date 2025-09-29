@@ -26,8 +26,9 @@
             </li>
             <li>
                 <%-- Este link será implementado nos próximos passos --%>
-                <a href="#">Cadastro de Atores</a>
-            </li>
+                <a a href="${pageContext.request.contextPath}/formulario/ator/listagem.jsp">Cadastro de Atores</a></a>
+            </li>  
+
             <li>
                 <%-- Este link será implementado nos próximos passos --%>
                 <a href="#">Cadastro de DVDs</a>

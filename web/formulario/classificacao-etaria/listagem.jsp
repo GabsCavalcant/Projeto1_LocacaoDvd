@@ -39,7 +39,7 @@
             </thead>
             <tbody>
                 
-                <%-- CORRIGIDO: O nome da classe de serviço está padronizado --%>
+                
                 <jsp:useBean
                     id="servicos"
                     scope="page"
@@ -47,7 +47,7 @@
 
                 <c:forEach items="${servicos.todos}" var="classificacaoEtaria">
                     <tr>
-                        <%-- CORRIGIDO: Usando a variável "classificacaoEtaria" (camelCase) --%>
+                        
                         <td>${classificacaoEtaria.id}</td>
                         <td>${classificacaoEtaria.descricao}</td>
                         <td>

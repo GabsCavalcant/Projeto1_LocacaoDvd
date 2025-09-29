@@ -14,7 +14,7 @@
 
         <h1>Alterar Classificação Etária</h1>
         
-        <%-- CORRIGIDO: O "action" aponta para o endereço padronizado (plural) --%>
+       
         <form method="post" action="${cp}/processaClassificacoesEtarias">
             
             <input type="hidden" name="acao" value="alterar"/>

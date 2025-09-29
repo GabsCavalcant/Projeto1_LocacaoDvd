@@ -28,7 +28,7 @@
         
         <br>
 
-        <%-- CORRIGIDO: O "action" aponta para "processaClassificacoesEtarias" --%>
+        
         <form method="post" action="${cp}/processaClassificacoesEtarias" class="form-botoes">
             
             <input type="hidden" name="acao" value="excluir"/>
@@ -39,7 +39,7 @@
 
         </form>
 
-        <%-- CORRIGIDO: Link "Voltar" fora do form e com o caminho certo --%>
+        
         <p>
             <a href="${cp}/formulario/classificacao-etaria/listagem.jsp" class="botao">Voltar</a>
         </p>
