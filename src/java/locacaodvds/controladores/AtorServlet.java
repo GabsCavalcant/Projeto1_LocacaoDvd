@@ -8,6 +8,8 @@ import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import java.time.LocalDate;
+import java.sql.Date;
 import locacaodvds.dao.AtorDAO;
 import locacaodvds.entidades.Ator;
 
@@ -39,9 +41,17 @@ public class AtorServlet extends HttpServlet {
                 disp = request.getRequestDispatcher("/formulario/ator/excluir.jsp");
 
             } else if (acao.equals("inserir")) {
+                String nome = request.getParameter("nome");
                 String sobrenome = request.getParameter("sobrenome");
+                String data = request.getParameter("dataEstreia");
+                LocalDate dataLocalDate = LocalDate.parse(data);
+                Date dataSalvar = Date.valueOf(dataLocalDate);
+                
                 Ator g = new Ator();
+                g.setNome(nome);
                 g.setSobrenome(sobrenome);
+                g.setData_Estreia(dataSalvar);
+                
                 dao.salvar(g);
 
                 response.sendRedirect(request.getContextPath() + "/formulario/ator/listagem.jsp");
@@ -49,12 +59,17 @@ public class AtorServlet extends HttpServlet {
 
             } else if (acao.equals("alterar")) {
                 int id = Integer.parseInt(request.getParameter("id"));
+                String nome = request.getParameter("nome");
                 String sobrenome = request.getParameter("sobrenome");
+                String data = request.getParameter("dataEstreia");
+                LocalDate dataLocalDate = LocalDate.parse(data);
+                Date dataParaSalvar = Date.valueOf(dataLocalDate);
+
                 Ator g = new Ator();
                 g.setId(id);
+                g.setNome(nome);
                 g.setSobrenome(sobrenome);
-                
-               
+                g.setData_Estreia(dataParaSalvar);
 
                 dao.atualizar(g);
 

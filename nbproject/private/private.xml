@@ -10,6 +10,11 @@
             <file>file:/C:/Users/gabri/OneDrive/Documentos/NetBeansProjects/Locacaodvds/web/formulario/classificacao-etaria/listagem.jsp</file>
             <file>file:/C:/Users/gabri/OneDrive/Documentos/NetBeansProjects/Locacaodvds/web/index.jsp</file>
             <file>file:/C:/Users/gabri/OneDrive/Documentos/NetBeansProjects/Locacaodvds/web/formulario/classificacao-etaria/novo.jsp</file>
+            <file>file:/C:/Users/gabri/OneDrive/Documentos/NetBeansProjects/Locacaodvds/src/java/locacaodvds/controladores/AtorServlet.java</file>
+            <file>file:/C:/Users/gabri/OneDrive/Documentos/NetBeansProjects/Locacaodvds/web/formulario/ator/listagem.jsp</file>
+            <file>file:/C:/Users/gabri/OneDrive/Documentos/NetBeansProjects/Locacaodvds/web/formulario/genero/listagem.jsp</file>
+            <file>file:/C:/Users/gabri/OneDrive/Documentos/NetBeansProjects/Locacaodvds/src/java/locacaodvds/servicos/AtorService.java</file>
+            <file>file:/C:/Users/gabri/OneDrive/Documentos/NetBeansProjects/Locacaodvds/src/java/locacaodvds/entidades/Ator.java</file>
         </group>
     </open-files>
 </project-private>

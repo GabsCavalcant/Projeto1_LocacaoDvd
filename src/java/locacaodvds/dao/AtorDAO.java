@@ -125,8 +125,8 @@ public class AtorDAO extends DAO<Ator>{
 
             ator.setId(rs.getInt("id"));
             ator.setNome(rs.getString("nome"));
-            ator.setNome(rs.getString("sobrenome"));
-            ator.setNome(rs.getString("data_estreia"));
+            ator.setSobrenome(rs.getString("sobrenome"));
+            ator.setData_Estreia(rs.getDate("data_estreia"));
 
         }
 
