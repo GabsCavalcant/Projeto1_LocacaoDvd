@@ -32,11 +32,11 @@ public class DvdDAO extends DAO<Dvd>{
 
         try (PreparedStatement stmt = getConnection().prepareStatement(sql)) {
             stmt.setString(1, obj.getTitulo());
-            stmt.setInt(2, obj.getAno_lancamento());
-            stmt.setDate(3, obj.getData_lancamento());
-            stmt.setInt(4, obj.getDuracaoMinutos());
+            stmt.setInt(2, obj.getAnoLancamento());
+            stmt.setDate(3, obj.getDataLancamento());
+            stmt.setInt(4, obj.getDuracaoEmMinutos());
             stmt.setInt(5, obj.getGenero().getId());
-            stmt.setInt(6, obj.getClass_etaria().getId());
+            stmt.setInt(6, obj.getClassificacaoEtaria().getId());
             stmt.setInt(7, obj.getAtorPrincipal().getId());
             stmt.setInt(8, obj.getAtorCoadjuvante().getId());
             stmt.executeUpdate();
@@ -50,11 +50,11 @@ public class DvdDAO extends DAO<Dvd>{
 
         try (PreparedStatement stmt = getConnection().prepareStatement(sql)) {
             stmt.setString(1, obj.getTitulo());
-            stmt.setInt(2, obj.getAno_lancamento());
-            stmt.setDate(3, obj.getData_lancamento());
-            stmt.setInt(4, obj.getDuracaoMinutos());
+            stmt.setInt(2, obj.getAnoLancamento());
+            stmt.setDate(3, obj.getDataLancamento());
+            stmt.setInt(4, obj.getDuracaoEmMinutos());
             stmt.setInt(5, obj.getGenero().getId());
-            stmt.setInt(6, obj.getClass_etaria().getId());
+            stmt.setInt(6, obj.getClassificacaoEtaria().getId());
             stmt.setInt(7, obj.getAtorPrincipal().getId());
             stmt.setInt(8, obj.getAtorCoadjuvante().getId());
             stmt.setInt(9, obj.getId());
@@ -114,11 +114,11 @@ public class DvdDAO extends DAO<Dvd>{
                 Dvd dvd = new Dvd();
                 dvd.setId(rs.getInt("dvd_id"));
                 dvd.setTitulo(rs.getString("dvd_titulo"));
-                dvd.setAno_lancamento(rs.getInt("ano_lancamento"));
-                dvd.setData_lancamento(rs.getDate("data_lancamento"));
-                dvd.setDuracaoMinutos(rs.getInt("duracao_minutos"));
+                dvd.setAnoLancamento(rs.getInt("ano_lancamento"));
+                dvd.setDataLancamento(rs.getDate("data_lancamento"));
+                dvd.setDuracaoEmMinutos(rs.getInt("duracao_minutos"));
                 dvd.setGenero(g);
-                dvd.setClass_etaria(ce);
+                dvd.setClassificacaoEtaria(ce);
                 dvd.setAtorPrincipal(ap);
                 dvd.setAtorCoadjuvante(ac);
 
@@ -147,15 +147,15 @@ public class DvdDAO extends DAO<Dvd>{
 
     try (PreparedStatement stmt = getConnection().prepareStatement(sql)) {
 
-        // CORREÇÃO 2: O parâmetro deve ser definido ANTES de executar a query.
+        
         stmt.setInt(1, id);
 
         try (ResultSet rs = stmt.executeQuery()) {
             
-            // CORREÇÃO 3: Usamos 'if' porque esperamos apenas um resultado.
+            
             if (rs.next()) {
 
-                // CORREÇÃO 1: Usando os nomes exatos dos "apelidos" (AS) definidos no SQL.
+
                 Genero g = new Genero();
                 g.setId(rs.getInt("genero_id"));
                 g.setDescricao(rs.getString("genero_descricao"));
@@ -174,14 +174,14 @@ public class DvdDAO extends DAO<Dvd>{
                 ac.setNome(rs.getString("ator_c_nome"));
                 ac.setSobrenome(rs.getString("ator_c_sobrenome"));
 
-                dvd = new Dvd(); // Corrigi o nome da classe para DVD maiúsculo
+                dvd = new Dvd(); 
                 dvd.setId(rs.getInt("dvd_id"));
                 dvd.setTitulo(rs.getString("dvd_titulo"));
-                dvd.setAno_lancamento(rs.getInt("ano_lancamento")); // Corrigi nome do método
-                dvd.setData_lancamento(rs.getDate("data_lancamento")); // Corrigi nome do método
-                dvd.setDuracaoMinutos(rs.getInt("duracao_minutos")); // Corrigi nome do método e da coluna
+                dvd.setAnoLancamento(rs.getInt("ano_lancamento")); 
+                dvd.setDataLancamento(rs.getDate("data_lancamento")); 
+                dvd.setDuracaoEmMinutos(rs.getInt("duracao_minutos")); 
                 dvd.setGenero(g);
-                dvd.setClass_etaria(ce); // Corrigi nome do método
+                dvd.setClassificacaoEtaria(ce); 
                 dvd.setAtorPrincipal(ap);
                 dvd.setAtorCoadjuvante(ac);
             }

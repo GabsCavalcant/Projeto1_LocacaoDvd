@@ -1,4 +1,4 @@
-package locacaodvds.testes;
+/* package locacaodvds.testes;
 
 import java.sql.Date;
 import java.sql.SQLException;
@@ -68,7 +68,7 @@ public class testeDVD {
             try (DvdDAO dvdDAO = new DvdDAO()) {
                 
                 // 1. SALVAR DVD
-                System.out.println("\n[Passo 1: Salvando um novo DVD]");
+                System.out.println("\n[Passo 1: Saalvando um novo DVD]");
                 dvdDeTeste = new Dvd();
                 dvdDeTeste.setTitulo("Matrix (Teste)");
                 dvdDeTeste.setAno_lancamento(1999);
@@ -150,4 +150,4 @@ public class testeDVD {
         System.err.println("Ocorreu um erro durante a limpeza dos dados de teste.");
         e.printStackTrace();
     }
-}}}
+}}} */

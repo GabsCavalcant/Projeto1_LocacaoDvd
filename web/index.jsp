@@ -26,12 +26,12 @@
             </li>
             <li>
                 <%-- Este link será implementado nos próximos passos --%>
-                <a a href="${pageContext.request.contextPath}/formulario/ator/listagem.jsp">Cadastro de Atores</a></a>
+                <a  href="${pageContext.request.contextPath}/formulario/ator/listagem.jsp">Cadastro de Atores</a>
             </li>  
 
             <li>
                 <%-- Este link será implementado nos próximos passos --%>
-                <a href="#">Cadastro de DVDs</a>
+                <a href="${pageContext.request.contextPath}/formulario/dvds/listagem.jsp">Cadastro de DVDs</a>
             </li>
         </ul>
 

@@ -1,27 +1,21 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package locacaodvds.entidades;
 
 import java.sql.Date;
 
-/**
- *
- * @author gabri
- */
+
 public class Dvd {
-    
+
     private int id;
     private String titulo;
-    private int ano_lancamento;
+    private int anoLancamento; 
+    private Date dataLancamento;  
+    private int duracaoEmMinutos; 
+    private Genero genero;
+    private Classificacao_etaria classificacaoEtaria; 
     private Ator atorPrincipal;
     private Ator atorCoadjuvante;
-    private Date data_lancamento;
-    private int duracaoMinutos;
-    private Classificacao_etaria class_etaria;
-    private Genero genero;
 
+    // Getters e Setters
     public int getId() {
         return id;
     }
@@ -38,12 +32,14 @@ public class Dvd {
         this.titulo = titulo;
     }
 
-    public int getAno_lancamento() {
-        return ano_lancamento;
+
+    public int getAnoLancamento() {
+        return anoLancamento;
     }
 
-    public void setAno_lancamento(int ano_lancamento) {
-        this.ano_lancamento = ano_lancamento;
+    
+    public void setAnoLancamento(int anoLancamento) {
+        this.anoLancamento = anoLancamento;
     }
 
     public Ator getAtorPrincipal() {
@@ -62,28 +58,34 @@ public class Dvd {
         this.atorCoadjuvante = atorCoadjuvante;
     }
 
-    public Date getData_lancamento() {
-        return data_lancamento;
+   
+    public Date getDataLancamento() {
+        return dataLancamento;
     }
 
-    public void setData_lancamento(Date data_lancamento) {
-        this.data_lancamento = data_lancamento;
+
+    public void setDataLancamento(Date dataLancamento) {
+        this.dataLancamento = dataLancamento;
     }
 
-    public int getDuracaoMinutos() {
-        return duracaoMinutos;
+    // Corrigido para camelCase
+    public int getDuracaoEmMinutos() {
+        return duracaoEmMinutos;
     }
 
-    public void setDuracaoMinutos(int duracaoMinutos) {
-        this.duracaoMinutos = duracaoMinutos;
+   
+    public void setDuracaoEmMinutos(int duracaoEmMinutos) {
+        this.duracaoEmMinutos = duracaoEmMinutos;
     }
 
-    public Classificacao_etaria getClass_etaria() {
-        return class_etaria;
+    
+    public Classificacao_etaria getClassificacaoEtaria() {
+        return classificacaoEtaria;
     }
 
-    public void setClass_etaria(Classificacao_etaria class_etaria) {
-        this.class_etaria = class_etaria;
+    
+    public void setClassificacaoEtaria(Classificacao_etaria classificacaoEtaria) {
+        this.classificacaoEtaria = classificacaoEtaria;
     }
 
     public Genero getGenero() {
@@ -93,7 +95,4 @@ public class Dvd {
     public void setGenero(Genero genero) {
         this.genero = genero;
     }
-    
-    
-    
 }
