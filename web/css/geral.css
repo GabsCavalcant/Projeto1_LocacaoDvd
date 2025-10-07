@@ -1,0 +1,61 @@
+/*
+ * ESTILOS ESPECÍFICOS PARA A SEÇÃO DE ATORES
+ * Arquivo: ator.css
+ */
+
+/* ======================================= */
+/* Estilos Gerais para a Página de Ator    */
+/* ======================================= */
+
+/* Título roxo para todas as páginas de ator */
+.pagina-ator h1 {
+    color: var(--cor-primaria);
+    border-bottom-color: var(--cor-primaria);
+    text-shadow: 0 0 8px rgba(187, 134, 252, 0.5);
+}
+
+/* Cabeçalho da tabela com fundo roxo */
+.pagina-ator .tabelaListagem th {
+    background-color: var(--cor-primaria);
+    color: var(--cor-fundo); 
+}
+
+/* Efeito de hover com uma borda roxa */
+.pagina-ator .tabelaListagem tr:hover {
+    background-color: #2a2a2a;
+    outline: 1px solid var(--cor-primaria);
+    outline-offset: -1px;
+}
+
+/* Links de Ação (Alterar/Excluir) com a cor roxa */
+.pagina-ator .tabelaListagem a {
+    color: var(--cor-primaria);
+    font-weight: bold;
+}
+
+.pagina-ator .tabelaListagem a:hover {
+    color: var(--cor-secundaria); /* Muda para ciano no hover */
+}
+
+/* Efeito de foco roxo nos inputs do formulário */
+.pagina-ator input:focus, 
+.pagina-ator select:focus {
+    border-color: var(--cor-primaria);
+    box-shadow: 0 0 8px rgba(187, 134, 252, 0.5);
+}
+
+/* Ícone de estrela para os links do menu na index.jsp */
+.menu-principal a[href*="ator"]::before {
+    font-family: "Font Awesome 6 Free";
+    content: "\f005"; /* Código do ícone de estrela */
+    font-weight: 900;
+    margin-right: 10px;
+    color: var(--cor-primaria);
+}
+
+
+.pagina-ator.pagina-excluir h1 {
+    color: var(--cor-erro);
+    border-bottom-color: var(--cor-erro);
+    text-shadow: 0 0 8px rgba(207, 102, 121, 0.5);
+}

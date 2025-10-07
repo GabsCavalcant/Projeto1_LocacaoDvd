@@ -1,0 +1,240 @@
+/*
+ * ESTILO COMPLETO - PROJETO LOCADORA DE DVDS
+ * Tema: Dark Mode com Animações e Ícones
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Define a paleta de cores do tema escuro */
+:root {
+    --cor-fundo: #121212;
+    --cor-superficie: #1e1e1e;
+    --cor-primaria: #bb86fc; /* Roxo suave */
+    --cor-secundaria: #03dac6; /* Ciano vibrante */
+    --cor-texto-principal: #e1e1e1;
+    --cor-texto-secundario: #a8a8a8;
+    --cor-borda: #444;
+    --cor-sucesso: #27ae60;
+    --cor-erro: #cf6679;
+}
+
+/* Estilo geral e animação de entrada */
+body {
+    font-family: 'Roboto', sans-serif; /* Usa a nova fonte */
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto-principal);
+    margin: 2em;
+    line-height: 1.6;
+    animation: fadeInAnimation ease 0.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Estilos de títulos */
+h1, h2 {
+    color: var(--cor-primaria);
+}
+
+h1 {
+    border-bottom: 3px solid var(--cor-primaria);
+    padding-bottom: 10px;
+    margin-bottom: 1em;
+}
+
+.titulo-principal {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 1em;
+    border-bottom: none;
+}
+
+/* Estilos de links */
+a {
+    color: var(--cor-secundaria);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--cor-primaria);
+}
+
+/* Adiciona um espaço para ícones antes do texto */
+i.fa-solid {
+    margin-right: 8px;
+}
+
+/* ============================ */
+/* Estilos das Páginas de Lista */
+/* ============================ */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: var(--cor-superficie);
+}
+
+.tabelaListagem th,
+.tabelaListagem td {
+    border-bottom: 1px solid var(--cor-borda);
+    padding: 12px 15px;
+    text-align: left;
+}
+
+.tabelaListagem th {
+    background-color: #333333;
+    color: var(--cor-primaria);
+    text-transform: uppercase;
+    font-size: 0.9em;
+}
+
+.tabelaListagem tr {
+    transition: background-color 0.3s ease;
+}
+
+.tabelaListagem tr:hover {
+    background-color: #2a2a2a;
+}
+
+/* ============================== */
+/* Estilos dos Formulários        */
+/* ============================== */
+.tabelaFormulario td {
+    padding: 10px;
+}
+
+.tabelaFormulario .alinharDireita {
+    text-align: right;
+    font-weight: bold;
+    padding-right: 10px;
+    width: 25%;
+    color: var(--cor-texto-secundario);
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"],
+input[type="email"],
+select {
+    width: 95%;
+    padding: 10px;
+    border: 1px solid var(--cor-borda);
+    border-radius: 4px;
+    background-color: #333;
+    color: var(--cor-texto-principal);
+    font-size: 1em;
+    transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+input:focus, select:focus {
+    outline: none;
+    border-color: var(--cor-primaria);
+    box-shadow: 0 0 8px rgba(187, 134, 252, 0.5); /* Brilho roxo suave */
+}
+
+input[type="submit"] {
+    background-color: var(--cor-primaria);
+    color: #121212;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all 0.2s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #a362ea;
+    transform: scale(1.05);
+}
+
+.botao, a.botao {
+    display: inline-block;
+    background-color: #6c757d;
+    color: white !important;
+    padding: 10px 15px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+.botao:hover, a.botao:hover {
+    background-color: #5a6268;
+    text-decoration: none;
+}
+
+.botao-excluir {
+    background-color: var(--cor-erro);
+    color: #121212;
+}
+.botao-excluir:hover {
+    background-color: #b74659;
+}
+
+/* ============================ */
+/* Estilos do Menu Principal    */
+/* ============================ */
+.menu-principal {
+    background-color: var(--cor-superficie);
+    max-width: 700px;
+    border: 2px solid var(--cor-primaria);
+    border-radius: 8px;
+    padding: 2em;
+    margin: 3em auto;
+    box-shadow: 0 0 20px rgba(187, 134, 252, 0.15);
+}
+
+.menu-principal h2 {
+    margin-top: 0;
+    text-align: center;
+    color: var(--cor-texto-principal);
+}
+
+.menu-principal ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-principal li a {
+    display: block;
+    padding: 15px 20px;
+    background-color: #333;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: var(--cor-texto-secundario);
+    transition: all 0.3s ease-in-out;
+}
+
+.menu-principal li a:hover {
+    background-color: var(--cor-primaria);
+    color: #121212;
+    transform: translateX(10px);
+    box-shadow: 0 5px 15px rgba(187, 134, 252, 0.4);
+}
+
+/* =============================== */
+/* Estilos para Mensagens/Alertas  */
+/* =============================== */
+.mensagem-sucesso {
+    background-color: var(--cor-sucesso);
+    color: white;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    text-align: center;
+    font-weight: bold;
+}

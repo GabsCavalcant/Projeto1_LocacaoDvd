@@ -7,7 +7,8 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Novo Classificação Etária</title>
-        <link rel="stylesheet" href="${cp}/css/estilo.css"/>
+        <link rel="stylesheet" href="${cp}/css/index.css"/>
+        <link rel="stylesheet" href="${cp}/css/geral.css"/>
     </head>
     <body>
         <h1>Novo Classificação Etária</h1>

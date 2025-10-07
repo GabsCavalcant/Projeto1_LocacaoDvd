@@ -11,10 +11,11 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <link rel="stylesheet" href="${cp}/css/estilo.css"/>
+        <link rel="stylesheet" href="${cp}/css/index.css"/>
+        <link rel="stylesheet" href="${cp}/css/geral.css"/>
         <title>Exclusão</title>
     </head>
-    <body>
+    <body class="pagina pagina-genero">
         <h1>Exclua!!!</h1>
         
          <p>Você tem certeza que deseja excluir o gênero abaixo?</p>

@@ -1,12 +1,11 @@
 <%-- 
-    Document   : listagem
-    Created on : 25 de set. de 2025, 13:51:16
-    Author     : gabri
+    Document   : listagem (Atores)
 --%>
-a<%@page contentType="text/html" pageEncoding="UTF-8"%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<c:set var="cp" value="${pageContext.request.contextPath}"/>
 <%@taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+<c:set var="cp" value="${pageContext.request.contextPath}"/>
 <c:set var="prefixo" value="processaAtores?acao=preparar"/>
 
 <!DOCTYPE html>
@@ -15,12 +14,15 @@ a<%@page contentType="text/html" pageEncoding="UTF-8"%>
         <title>Atores Cadastrados</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="${cp}/css/estilo.css"/>
+        
+        
+        <link rel="stylesheet" href="${cp}/css/index.css"/>
+        <link rel="stylesheet" href="${cp}/css/ator.css"/>
+
     </head>
-    <body>
+    <body class="pagina-ator">
         <h1>Atores Cadastrados</h1>
         <p>
-           
             <a href="${cp}/formulario/ator/novo.jsp">
                 Novo Ator
             </a>
@@ -32,8 +34,8 @@ a<%@page contentType="text/html" pageEncoding="UTF-8"%>
                     <th>Id</th>
                     <th>Nome</th>
                     <th>Sobrenome</th>
-                    <th>Data Estreia</th>
-                    <th>Alterar</th>                 
+                    <th>Data de Estreia</th>
+                    <th>Alterar</th>
                     <th>Excluir</th>
                 </tr>
             </thead>
@@ -49,9 +51,9 @@ a<%@page contentType="text/html" pageEncoding="UTF-8"%>
                         <td>${ator.nome}</td>
                         <td>${ator.sobrenome}</td>
                         <td>
+                            <%-- CORREÇÃO: Usando a propriedade "dataEstreia" sem _ --%>
                             <fmt:formatDate value="${ator.data_Estreia}" pattern="dd/MM/yyyy"/>
                         </td>
-                        
                         <td>
                             <a href="${cp}/${prefixo}Alteracao&id=${ator.id}">Alterar</a>
                         </td>

@@ -1,0 +1,60 @@
+/*
+ * ESTILOS ESPECÍFICOS PARA A SEÇÃO DE DVDS
+ * Arquivo: dvd.css
+ * Tema: Variação do Dark Mode com Destaque Roxo
+ */
+
+/* Título com destaque em roxo */
+.pagina-dvd h1 {
+    color: var(--cor-primaria);
+    border-bottom-color: var(--cor-primaria);
+    text-shadow: 0 0 8px rgba(187, 134, 252, 0.5); /* Brilho roxo */
+}
+
+/* Cabeçalho da tabela com fundo roxo para mais destaque */
+.pagina-dvd .tabelaListagem th {
+    background-color: var(--cor-primaria);
+    color: var(--cor-fundo); /* Texto preto/escuro para contraste */
+}
+
+/* Efeito de hover com uma borda roxa sutil */
+.pagina-dvd .tabelaListagem tr:hover {
+    background-color: #2a2a2a;
+    outline: 1px solid var(--cor-primaria);
+    outline-offset: -1px;
+}
+
+/* Links de Ação (Alterar/Excluir) com a cor roxa */
+.pagina-dvd .tabelaListagem a {
+    color: var(--cor-primaria);
+    font-weight: bold;
+}
+
+.pagina-dvd .tabelaListagem a:hover {
+    color: white;
+}
+
+/* Efeito de foco roxo nos inputs do formulário */
+.pagina-dvd input:focus, 
+.pagina-dvd select:focus {
+    border-color: var(--cor-primaria);
+    box-shadow: 0 0 8px rgba(187, 134, 252, 0.5);
+}
+
+/* Botões com o tema roxo */
+.pagina-dvd input[type="submit"] {
+    background-color: var(--cor-primaria);
+}
+
+.pagina-dvd input[type="submit"]:hover {
+    background-color: #a362ea; /* Roxo um pouco mais claro */
+}
+
+/* Ícone para os links do menu na index.jsp */
+.menu-principal a[href*="dvd"]::before {
+    font-family: "Font Awesome 6 Free";
+    content: "\f144"; /* Código do ícone de disco/cd */
+    font-weight: 900;
+    margin-right: 10px;
+    color: var(--cor-primaria);
+}

@@ -14,7 +14,8 @@
     <head>
         <title>Excluir Ator</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <link rel="stylesheet" href="${cp}/css/estilo.css"/>
+        <link rel="stylesheet" href="${cp}/css/index.css"/>
+        <link rel="stylesheet" href="${cp}/css/ator.css"/>
     </head>
     <body>
         <h1>Excluir Ator</h1>

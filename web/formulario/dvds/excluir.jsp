@@ -8,9 +8,10 @@
     <head>
         <title>Excluir DVD</title>
         <meta charset="UTF-8">
-        <link rel="stylesheet" href="${cp}/css/estilo.css"/>
+        <link rel="stylesheet" href="${cp}/css/index.css"/>
+        <link rel="stylesheet" href="${cp}/css/geral.css"/>
     </head>
-    <body>
+    <body class="pagina pagina-dvd">
 
         <h1>Excluir DVD</h1>
 

@@ -3,7 +3,7 @@
     Created on : 25 de set. de 2025, 13:51:16
     Author     : gabri
 --%>
-a<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <c:set var="cp" value="${pageContext.request.contextPath}"/>
 <c:set var="prefixo" value="processaGeneros?acao=preparar"/>
@@ -14,9 +14,11 @@ a<%@page contentType="text/html" pageEncoding="UTF-8"%>
         <title>Gêneros Cadastrados</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="${cp}/css/estilo.css"/>
+        <link rel="stylesheet" href="${cp}/css/index.css"/>
+        
+        <link rel="stylesheet" href="${cp}/css/geral.css"/>
     </head>
-    <body>
+    <body class="pagina pagina-dvd">
         <h1>Gêneros Cadastrados</h1>
         <p>
             <%-- CORRIGIDO: Usando seu caminho no singular --%>

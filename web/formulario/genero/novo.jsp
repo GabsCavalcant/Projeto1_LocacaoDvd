@@ -7,9 +7,11 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Novo Gênero</title>
-        <link rel="stylesheet" href="${cp}/css/estilo.css"/>
+        <link rel="stylesheet" href="${cp}/css/index.css"/>
+        
+        <link rel="stylesheet" href="${cp}/css/geral.css"/>
     </head>
-    <body>
+    <body class="pagina pagina-dvd">
         <h1>Novo Gênero</h1>
         
         <form action="${cp}/processaGeneros" method="post">
