@@ -68,7 +68,7 @@
                             <a href="${cp}/${prefixo}Alteracao&id=${dvd.id}">Alterar</a>
                         </td>
                         <td>
-                            <a href="${cp}/${prefixo}Exclusao&id=${dvd.id}">Excluir</a>
+                             <a href="${cp}/${prefixo}Exclusao&id=${dvd.id}">Excluir</a>
                         </td>
                     </tr>
                 </c:forEach>
