@@ -18,7 +18,7 @@ O sistema implementa as operações de CRUD (Criar, Ler, Atualizar e Excluir) pa
 A interface da aplicação foi desenvolvida com um tema escuro (Dark Mode) e modularizada com CSS para garantir uma experiência de usuário agradável e consistente.
 
 * **Tema Principal:** Paleta de cores escura com Roxo e Ciano como cores de destaque.
-* **Estilos Modulares:** Um arquivo `estilo.css` principal para a base, um `pagina.css` para a estrutura, e arquivos específicos (`ator.css`, `genero.css`, etc.) para customizar cada seção.
+* **Estilos Modulares:** Um arquivo `geral.css` principal para a base, um `geral.css` para a estrutura, e arquivos específicos (`dvd.css`, `genero.css`, etc.) para customizar cada seção.
 * **Ícones:** Utilização da biblioteca Font Awesome para melhorar a usabilidade da interface.
 * **Animações:** Efeitos sutis de transição e entrada para uma navegação mais fluida.
 
@@ -91,4 +91,4 @@ Siga os passos abaixo para configurar e rodar a aplicação localmente.
 * **Gabriel Cavalcante** - [GabsCavalcant](https://github.com/GabsCavalcant)
 
 ---
-*Este projeto foi desenvolvido com a assistência e mentoria do Gemini, em um processo focado no aprendizado prático e na resolução de problemas.*
+
