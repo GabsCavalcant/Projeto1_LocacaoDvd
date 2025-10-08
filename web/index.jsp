@@ -10,7 +10,7 @@
     <body>
         
        
-        <h1 class="titulo-principal">Locação Gabs</h1>
+        <h1 class="titulo-principal">Locadora 1.0V</h1>
         
         <div class="menu-principal">
             <h2>Cadastros Disponíveis</h2>
